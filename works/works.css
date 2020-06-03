@@ -1,0 +1,273 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+body {
+	line-height: 1.5;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a {
+	cursor: pointer;
+}
+
+
+/* -------------------------- */
+/* header　始まり */
+/* -------------------------- */
+
+header {
+	width: 100%;
+}
+
+header .bg-light {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+  color: rgb(128, 77, 77);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: rgb(128, 77, 77);
+}
+
+/* ハンバーガーボタン */
+
+/* ボーダーを消す */
+.navbar-light .navbar-toggler {
+  border-color: rgba(0,0,0,0); 
+}
+
+/* 青色の外側の枠を消す */
+button.navbar-toggler:focus{
+  outline:none;
+}
+
+/* -------------------------- */
+/* header 終わり */
+/* -------------------------- */
+
+
+#container {
+	width: 100%;
+	height: 100%;
+  text-align: center;
+}
+
+h1 {
+	width: 100%;
+	font-size: 30px;
+}
+
+#main-image {
+	width: 100%;
+	height: auto;
+}
+
+#main-image img {
+	margin-top: 20px;
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+}
+
+#main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2 {
+	font-size: 25px;
+  border-bottom: 1px solid black;
+  margin: 30px;
+}
+
+#list ul li {
+	font-size: 23px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+/* -------------------------- */
+/* Works　始まり */
+/* -------------------------- */
+
+#works {
+  margin-top: 50px;
+}
+
+h2 {
+	font-weight: 600;
+}
+
+#works ul {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+#works img {
+	width: 90%;
+	border: 1px solid black;
+}
+
+#works p {
+	margin-top: 10px;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 950px) {
+	#works img {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#works img {
+		width: 85%;
+	}
+
+	#works ul li {
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	h1 {
+		font-size: 25px;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	#list ul li {
+		font-size: 16px;
+	}
+
+	#works ul {
+		display: block;
+		margin-bottom: 0;
+	}
+	
+	#works p {
+		margin-bottom: 40px;
+	}
+}
+
+/* -------------------------- */
+/* Works 終わり */
+/* -------------------------- */
+
+
+/* -------------------------- */
+/* footer 始まり */
+/* -------------------------- */
+
+
+#footer-wrap {
+	text-align: center;
+}
+
+#footer-wrap ul {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+}
+
+#footer-wrap ul li {
+	margin-right: 40px;
+}
+
+@media screen and (max-width: 650px) {
+	#footer-wrap ul {
+		display: block;
+	}
+
+	#footer-wrap ul li {
+		margin-right: 0;
+	}
+}
+
+
+#footer-wrap ul li:last-child {
+	margin-right: 0;
+}
+
+#footer-wrap ul li a {
+	text-decoration: none;
+	color: black;
+}
+
+#footer-wrap ul li a:hover {
+	color: brown;
+}
+
+#footer-wrap .active {
+	color: brown;
+}
+
+#footer-wrap p {
+	background-color: rgb(238, 232, 232);
+}
+
+/* -------------------------- */
+/* footer　終わり */
+/* -------------------------- */
+
+/*------------------------------*/
+/* トップに戻るボタン*/
+/*------------------------------*/
+
+.back-to-top {
+  position: fixed;
+  bottom: 60px;
+  right:20px;
+
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: #f0f0f0;
+  color: #333;
+  opacity: 0.6;
+
+  /* 透明度をフワッと帰る演出 */
+  transition: opacity 2.5s;
+
+  font-size: 1.6rem;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* マウスを乗せた時に透明度を変える */
+.back-to-top:hover {
+  opacity: 1;
+}
