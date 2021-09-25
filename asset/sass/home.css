@@ -1,0 +1,402 @@
+@charset "UTF-8";
+/* line 3, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* line 74, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.5; }
+  /* line 79, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+  body ol, body ul {
+    list-style: none; }
+  /* line 82, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+  body .title {
+    margin-top: 80px;
+    margin-bottom: 30px; }
+  /* line 86, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+  body h2 {
+    text-align: center;
+    font-size: 35px; }
+  /* line 90, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+  body a {
+    color: #333;
+    cursor: pointer;
+    text-decoration: none; }
+    /* line 94, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+    body a:hover {
+      color: #198d19;
+      transition: 0.3s; }
+  /* line 99, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+  body .animated {
+    opacity: 0; }
+  /* line 102, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+  body header {
+    width: 100%;
+    height: 500px; }
+    /* line 105, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+    body header #main-top {
+      width: 100%; }
+      /* line 107, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+      body header #main-top #main-image {
+        width: 100%;
+        height: 500px;
+        background-image: url("../image/main_kv.jpg");
+        background-size: cover; }
+        /* line 112, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body header #main-top #main-image .nav_bg {
+          width: 100%;
+          height: 50px;
+          background-color: #fff;
+          opacity: 0.8;
+          z-index: 100;
+          display: flex;
+          justify-content: center;
+          position: fixed; }
+          /* line 121, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body header #main-top #main-image .nav_bg nav {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            position: relative; }
+            /* line 131, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body header #main-top #main-image .nav_bg nav.nav_wrapper {
+              width: 100%;
+              padding: 10px;
+              position: fixed; }
+              /* line 135, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body header #main-top #main-image .nav_bg nav.nav_wrapper a {
+                font-size: 120%; }
+              /* line 138, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body header #main-top #main-image .nav_bg nav.nav_wrapper .navbar-brand {
+                margin-left: 10px;
+                font-size: 120%; }
+              /* line 143, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body header #main-top #main-image .nav_bg nav.nav_wrapper #pc_nav_bar ul.pc_nav_list {
+                display: flex; }
+                /* line 145, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+                body header #main-top #main-image .nav_bg nav.nav_wrapper #pc_nav_bar ul.pc_nav_list li {
+                  margin-right: 20px; }
+                  /* line 148, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+                  body header #main-top #main-image .nav_bg nav.nav_wrapper #pc_nav_bar ul.pc_nav_list li a.active {
+                    color: #198d19;
+                    text-decoration: underline; }
+                  /* line 152, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+                  body header #main-top #main-image .nav_bg nav.nav_wrapper #pc_nav_bar ul.pc_nav_list li a:hover {
+                    text-decoration: underline;
+                    transition: 0.5s; }
+              @media (max-width: 670px) {
+                /* line 161, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+                body header #main-top #main-image .nav_bg nav.nav_wrapper #pc_nav_bar {
+                  display: none; } }
+              /* line 167, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body header #main-top #main-image .nav_bg nav.nav_wrapper #sp_nav_bar .sp_menu_btn {
+                position: absolute;
+                top: 5px;
+                right: 25px;
+                background-color: transparent;
+                border: none;
+                cursor: pointer; }
+                /* line 174, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+                body header #main-top #main-image .nav_bg nav.nav_wrapper #sp_nav_bar .sp_menu_btn button {
+                  border: none;
+                  cursor: pointer;
+                  background-color: #fff; }
+              /* line 180, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body header #main-top #main-image .nav_bg nav.nav_wrapper #sp_nav_bar ul.sp_nav_list {
+                display: none;
+                margin-top: 10px; }
+                /* line 184, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+                body header #main-top #main-image .nav_bg nav.nav_wrapper #sp_nav_bar ul.sp_nav_list li a {
+                  display: block;
+                  padding: 17px 25px;
+                  background: #198d19;
+                  color: #fff; }
+                  /* line 189, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+                  body header #main-top #main-image .nav_bg nav.nav_wrapper #sp_nav_bar ul.sp_nav_list li a.active {
+                    text-decoration: underline; }
+                  /* line 192, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+                  body header #main-top #main-image .nav_bg nav.nav_wrapper #sp_nav_bar ul.sp_nav_list li a:hover {
+                    text-decoration: underline;
+                    opacity: 0.8;
+                    transition: 0.5s; }
+              @media (min-width: 670px) {
+                /* line 202, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+                body header #main-top #main-image .nav_bg nav.nav_wrapper #sp_nav_bar {
+                  display: none; } }
+        @media (max-width: 670px) {
+          /* line 210, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body header #main-top #main-image nav.nav_wrapper {
+            display: block;
+            justify-content: flex-start; }
+            /* line 215, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body header #main-top #main-image nav.nav_wrapper #sp_nav_bar ul.sp_nav_list li {
+              border-bottom: 1px solid #03631b; } }
+        /* line 222, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body header #main-top #main-image #title_wrapper {
+          width: 100%; }
+          /* line 225, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body header #main-top #main-image #title_wrapper .main_title {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 30%; }
+            /* line 232, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body header #main-top #main-image #title_wrapper .main_title h1 {
+              font-size: 45px; }
+  /* line 240, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+  body #wrapper {
+    width: 100%; }
+    /* line 242, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+    body #wrapper .main-width {
+      width: 100%;
+      margin: 0 auto; }
+      /* line 247, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+      body #wrapper .main-width .container #about .main-width {
+        max-width: 1200px; }
+        /* line 253, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body #wrapper .main-width .container #about .main-width .container_flex {
+          display: flex;
+          justify-content: center; }
+          /* line 256, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper .main-width .container #about .main-width .container_flex .about_left {
+            margin-right: 20px; }
+            /* line 260, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper .main-width .container #about .main-width .container_flex .about_left .about_item .masato_photo img {
+              border-radius: 5px; }
+            /* line 265, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper .main-width .container #about .main-width .container_flex .about_left .about_item .twitter a {
+              color: #31b4f8; }
+              /* line 267, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body #wrapper .main-width .container #about .main-width .container_flex .about_left .about_item .twitter a:hover {
+                color: #198d19; }
+          /* line 274, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper .main-width .container #about .main-width .container_flex .about_right {
+            margin-left: 20px;
+            line-height: 2; }
+            /* line 278, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper .main-width .container #about .main-width .container_flex .about_right .about_item h3 {
+              font-size: 18px; }
+            /* line 287, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper .main-width .container #about .main-width .container_flex .about_right .about_item .btn {
+              margin-top: 10px; }
+              /* line 290, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body #wrapper .main-width .container #about .main-width .container_flex .about_right .about_item .btn a {
+                padding: 10px 20px;
+                background-color: #198d19;
+                border-radius: 5px;
+                color: #fff; }
+                /* line 296, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+                body #wrapper .main-width .container #about .main-width .container_flex .about_right .about_item .btn a:hover {
+                  background-color: #00a539; }
+    /* line 308, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+    body #wrapper #skills {
+      width: 100%;
+      height: auto;
+      margin-top: 80px; }
+      /* line 312, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+      body #wrapper #skills .green_bk {
+        width: 100%;
+        background-color: #e3ffe8; }
+        /* line 315, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body #wrapper #skills .green_bk .main-width {
+          max-width: 1200px;
+          padding-bottom: 80px; }
+          /* line 319, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper #skills .green_bk .main-width .title h2 {
+            padding-top: 80px; }
+          /* line 325, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item {
+            width: 100%;
+            height: auto;
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff; }
+            /* line 332, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item .skills-text {
+              width: 50%;
+              margin-right: 20px; }
+              /* line 335, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item .skills-text h3 {
+                text-align: center;
+                margin: 10px 0 10px 10px;
+                font-size: 20px;
+                font-weight: 600; }
+              /* line 341, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item .skills-text p {
+                margin-left: 10px; }
+            /* line 345, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item .skills-img {
+              width: 50%;
+              height: auto;
+              margin-bottom: -6px; }
+              /* line 349, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item .skills-img img {
+                width: 100%; }
+          /* line 354, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item2 {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            background-color: #fff; }
+            /* line 361, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item2 .skills-text {
+              background-color: #fff;
+              width: 50%;
+              margin-left: 20px; }
+              /* line 365, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item2 .skills-text h3 {
+                text-align: center;
+                margin: 10px 0 10px 10px;
+                font-size: 20px;
+                font-weight: 600; }
+              /* line 371, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item2 .skills-text p {
+                margin-left: 10px; }
+            /* line 375, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item2 .skills-img {
+              width: 50%;
+              height: auto;
+              margin-bottom: -6px; }
+              /* line 379, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+              body #wrapper #skills .green_bk .main-width #skills_cont .skills_inner .skills-item2 .skills-img img {
+                width: 100%; }
+    /* line 390, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+    body #wrapper #works {
+      width: 100%;
+      margin-bottom: 80px; }
+      /* line 393, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+      body #wrapper #works .main-width {
+        max-width: 1200px;
+        width: 100%; }
+        /* line 401, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body #wrapper #works .main-width .works-list .works-inner .works-flex ul {
+          display: flex;
+          justify-content: space-between; }
+          /* line 406, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper #works .main-width .works-list .works-inner .works-flex ul li a:hover {
+            opacity: 0.8;
+            transition: 0.5s; }
+          /* line 411, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper #works .main-width .works-list .works-inner .works-flex ul li p {
+            margin-bottom: 20px;
+            text-align: center; }
+    /* line 423, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+    body #wrapper #contact {
+      width: 100%; }
+      /* line 425, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+      body #wrapper #contact .contact-bk {
+        width: 100%;
+        background-image: url("../image/contact.jpg"); }
+        /* line 428, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body #wrapper #contact .contact-bk .main-width {
+          max-width: 1200px; }
+          /* line 431, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper #contact .contact-bk .main-width .title h2 {
+            padding-top: 80px; }
+          /* line 438, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper #contact .contact-bk .main-width .form .form-inner form .form-input {
+            margin-top: 10px;
+            text-align: center; }
+            /* line 441, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper #contact .contact-bk .main-width .form .form-inner form .form-input input {
+              padding: 10px 70px 10px 10px; }
+          /* line 446, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper #contact .contact-bk .main-width .form .form-inner form .form-btn {
+            text-align: center;
+            margin-top: 20px;
+            padding-bottom: 80px; }
+            /* line 450, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper #contact .contact-bk .main-width .form .form-inner form .form-btn button {
+              padding: 10px 20px; }
+    /* line 461, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+    body #wrapper footer {
+      width: 100%; }
+      /* line 463, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+      body #wrapper footer #footer-wrap {
+        margin-top: 20px; }
+        /* line 466, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body #wrapper footer #footer-wrap nav ul {
+          display: flex;
+          justify-content: center; }
+          /* line 469, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper footer #footer-wrap nav ul li {
+            margin-right: 20px; }
+            /* line 472, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+            body #wrapper footer #footer-wrap nav ul li a.active {
+              color: #198d19; }
+        /* line 479, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body #wrapper footer #footer-wrap p {
+          background-color: #e3ffe8;
+          margin-top: 10px;
+          padding-top: 10px;
+          text-align: center; }
+    /* line 487, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+    body #wrapper .back-btn {
+      position: fixed;
+      bottom: 0;
+      right: 20px;
+      bottom: 10px;
+      width: 50px; }
+      /* line 493, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+      body #wrapper .back-btn a {
+        font-size: 35px;
+        padding: 10px;
+        background-color: #cdddcd;
+        opacity: 0.6;
+        border-radius: 5px; }
+        /* line 499, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body #wrapper .back-btn a:hover {
+          opacity: 1; }
+    /* line 507, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+    body #wrapper #sp_menu {
+      position: fixed;
+      top: 10px;
+      left: 10px; }
+      @media (min-width: 670px) {
+        /* line 507, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body #wrapper #sp_menu {
+          display: none; } }
+      /* line 514, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+      body #wrapper #sp_menu .sp_menu_box {
+        width: 300px; }
+        /* line 517, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body #wrapper #sp_menu .sp_menu_box .sp_menu_btn {
+          width: 50px;
+          z-index: 10000; }
+      /* line 550, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+      body #wrapper #sp_menu #sp_menu_area #sp_gnavi ul {
+        display: none; }
+        /* line 553, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+        body #wrapper #sp_menu #sp_menu_area #sp_gnavi ul li a {
+          font-size: 24px; }
+          /* line 555, /Users/masato/Desktop/20210104portfolio/asset/sass/home.scss */
+          body #wrapper #sp_menu #sp_menu_area #sp_gnavi ul li aactive {
+            color: #198d19; }
+
+/*# sourceMappingURL=home.css.map */
